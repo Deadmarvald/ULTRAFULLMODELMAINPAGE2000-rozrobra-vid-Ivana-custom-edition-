@@ -13,4 +13,3 @@ switchMode.onclick = function () {
 		theme.href = "css/light-mode.css";
 	}
 }
-
