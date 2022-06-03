@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
   transition: 1s;
 }
+
 .header__row {
   display: flex;
   height: 119px;
@@ -123,13 +124,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__ntsnbtn {
+  background-color: #313132;
   margin: 0 78px 0 10px;
   color: #6D6B6B;
   transition: 1s;
+  z-index: 1;
 }
 
 .material-symbols-outlined{
-  background-color: #313132;
   padding-bottom: 4px;
   transition: 1s;
 }
@@ -169,14 +171,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: 1s;
 }
 
-.content__column_b1 {
+.content__column {
   margin: 0 70px 35px 0;
-  transition: 1s;
+  transition: .2s ease-out;
 }
 
-.content__column_b2 {
-  margin: 0 70px 35px 0;
-  transition: 1s;
+.content__column:hover {
+  margin: -5px 70px 35px 0;
 }
 
 .content__name {

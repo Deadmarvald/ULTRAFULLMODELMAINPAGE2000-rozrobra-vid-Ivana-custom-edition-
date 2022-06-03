@@ -125,13 +125,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__ntsnbtn {
+  background-color: #EFEFEF;
   margin: 0 78px 0 10px;
   color: #6D6B6B;
   transition: 1s;
 }
 
 .material-symbols-outlined{
-  background-color: #EFEFEF;
   padding-bottom: 4px;
   transition: 1s;
 }
@@ -171,14 +171,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: 1s;
 }
 
-.content__column_b1 {
+.content__column {
   margin: 0 70px 35px 0;
-  transition: 1s;
+  transition: .2s ease-out;
 }
 
-.content__column_b2 {
-  margin: 0 70px 35px 0;
-  transition: 1s;
+.content__column:hover {
+  margin: -5px 70px 35px 0;
 }
 
 .content__name {
