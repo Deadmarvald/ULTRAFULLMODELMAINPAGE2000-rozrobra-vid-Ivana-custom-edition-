@@ -61,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /*----------------------------------------------------------*/
 
+:root {
+  --opacity: 0;
+}
+
 .wrapper{
   min-height: 100%;
   overflow: hidden;
@@ -128,7 +132,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 78px 0 10px;
   color: #6D6B6B;
   transition: 1s;
-  z-index: 1;
 }
 
 .material-symbols-outlined{
@@ -437,4 +440,102 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.1em;
   text-transform: none;
   transition: 1s;
+}
+
+.readmenu__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.readmenu__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 227px 397px 152px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.readmenu__text_top {
+  max-width: 260px
+  line-height: 50px;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.25);
+  margin: 0 0 7px 0;
+  transition: 1s;
+}
+
+.readmenu__text_middle {
+  font-size: 90px;
+  line-height: 80px;
+  max-width: 598px;
+  color: #FFFFFF;
+  margin: 0 0 7px 0;
+  transition: 1s;
+}
+
+.readmenu__text_bottom {
+  max-width: 260px
+  line-height: 50px;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.25);
+  transition: 1s;
+}
+
+.readmenu__slider {
+  position: relative;
+  height: 3.8px;
+  width: 468px;
+  background-color: #C4C4C4;
+  border-radius: 45%
+
+}
+.readmenu__slider:active {
+  --opacity: 1;
+}
+
+output{
+  position: absolute;
+  left: -17px;
+  top: -37px;
+  padding: 7px 10px;
+  background-color: #C4C4C4;
+  border-radius: 10px 10px 0px 10px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.41px;
+  opacity: var(--opacity);
+  transition: opacity 1s cubic-bezier(1, 1, 0, 1);
+}
+
+#fader {
+  position: relative;
+  top: -7px;
+  height: 3.8px;
+  width: 468px;
+  background-color: transparent;
+  -webkit-appearance: none;
+  outline: 1;
+}
+
+#fader::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #8B8A8A;
+}
+
+.readmenu__instruction {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 35px;
+  letter-spacing: -0.41px;
+  color: #8B8A8A;
 }
